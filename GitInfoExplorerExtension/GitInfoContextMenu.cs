@@ -86,7 +86,7 @@ namespace GitInfoExplorerExtension
                 Text = GitInfoMenuName,
                 Image = Properties.Resources.Git
             };
-            mainMenu.DropDownItems.Add(new ToolStripMenuItem { Text = $@"Branch Name: {repo.Head.FriendlyName} <-> { repo.Head.RemoteName}:{repo.Head.TrackedBranch?.FriendlyName}" });
+            mainMenu.DropDownItems.Add(new ToolStripMenuItem { Text = $@"Branch Name: {repo.Head.FriendlyName} <->{repo.Head.TrackedBranch?.FriendlyName}" });
             mainMenu.DropDownItems.Add(new ToolStripMenuItem { Text = @"Branches Count: " + repo.Branches.Count().ToString() });
             mainMenu.DropDownItems.Add(new ToolStripMenuItem { Text = @"Tags Count: " + repo.Tags.Count().ToString() });
             mainMenu.DropDownItems.Add(new ToolStripSeparator());
